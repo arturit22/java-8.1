@@ -1,0 +1,36 @@
+public class Pindalad {
+    //alamrpogramm roopkuliku pindala arvutamiseks 
+    public static double roopkylikS(String a, String h) {
+        float alus = Float.parseFloat(a); //parsefloat teisendab stringi floatiks
+        float korgus = Float.parseFloat(h);
+        double s = alus * korgus;
+        return s;
+    }
+    //alamrpogramm ristkuliku pindala arvutamiseks
+    public static double ristkylikS(String a, String h) {
+        float alus = Float.parseFloat(a);
+        float korgus = Float.parseFloat(h);
+        double s = alus * korgus;
+        return s;
+    }
+    //alamprogramm kolmnurga pindala arvutamiseks
+    public static double kolmnurkS(String a, String h) {
+        float alus = Float.parseFloat(a);
+        float korgus = Float.parseFloat(h);
+        double s = alus * korgus / 2;
+        return s;
+    }
+
+    public static void main(String[] args) {
+        String a = "5"; //aluse arv
+        String h = "3"; // korguse arv
+        
+        double roopkylikPindala = roopkylikS(a, h); //roopkuliku pindala arvutamine
+        double ristkylikPindala = ristkylikS(a, h); //ristkuliku pindala arvutamine
+        double kolmnurkPindala = kolmnurkS(a, h); //kolmnurga pindala arvutamine
+
+        System.out.println("Rööpküliku pindala: " + roopkylikPindala);
+        System.out.println("Ristküliku pindala: " + ristkylikPindala);
+        System.out.println("Kolmnurga pindala: " + kolmnurkPindala);
+    }
+}
