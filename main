@@ -5,23 +5,23 @@ public class main {
         String korgusString = "3.0"; 
 
         //siin kasutan pindala arvutamise jaoks alamprogramme
-        double roopkylikuPindala = Pindalad.roopkylikS(alusString, korgusString);
-        System.out.println("roopkuliku pindala: " + roopkylikuPindala);
+        double roopkylikupindala = Pindalad.roopkylikS(alusString, korgusString);
+        System.out.println("roopkuliku pindala: " + roopkylikupindala);
 
-        double ristkylikuPindala = Pindalad.ristkylikS(alusString, korgusString);
-        System.out.println("ristkuliku pindala: " + ristkylikuPindala);
+        double ristkylikupindala = Pindalad.ristkylikS(alusString, korgusString);
+        System.out.println("ristkuliku pindala: " + ristkylikupindala);
 
-        double kolmnurgaPindala = Pindalad.kolmnurkS(alusString, korgusString);
-        System.out.println("kolmnurga pindala: " + kolmnurgaPindala);
+        double kolmnurgapindala = Pindalad.kolmnurkS(alusString, korgusString);
+        System.out.println("kolmnurga pindala: " + kolmnurgapindala);
 
         //siin kasutan ruumala arvutamise jaoks alamprogramme
-        double risttahukaRuumala = Ruumala.risttahukasV(5.0, 3.0, 2.0); 
-        System.out.println("risttahuka ruumala: " + risttahukaRuumala);
+        double risttahukaruumala = Ruumala.risttahukasV(5.0, 3.0, 2.0); 
+        System.out.println("risttahuka ruumala: " + risttahukaruumala);
 
-        double ristkulikprismaRuumala = Ruumala.ristkulikprismaV(5.0, 3.0, 2.0);
-        System.out.println("ristkulikprisma ruumala: " + ristkulikprismaRuumala);
+        double ristkulikprismaruumala = Ruumala.ristkulikprismaV(5.0, 3.0, 2.0);
+        System.out.println("ristkulikprisma ruumala: " + ristkulikprismaruumala);
         
-        double koonuseRuumala = Ruumala.koonusV(2.0, 4.0); 
-        System.out.println("koonuse ruumala: " + koonuseRuumala);
+        double koonuseruumala = Ruumala.koonusV(2.0, 4.0); 
+        System.out.println("koonuse ruumala: " + koonuseruumala);
     }
 }
