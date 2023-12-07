@@ -20,17 +20,4 @@ public class Pindalad {
         double s = alus * korgus / 2;
         return s;
     }
-
-    public static void main(String[] args) {
-        String a = "5"; //aluse arv
-        String h = "3"; // korguse arv
-        
-        double roopkylikPindala = roopkylikS(a, h); //roopkuliku pindala arvutamine
-        double ristkylikPindala = ristkylikS(a, h); //ristkuliku pindala arvutamine
-        double kolmnurkPindala = kolmnurkS(a, h); //kolmnurga pindala arvutamine
-
-        System.out.println("Rööpküliku pindala: " + roopkylikPindala);
-        System.out.println("Ristküliku pindala: " + ristkylikPindala);
-        System.out.println("Kolmnurga pindala: " + kolmnurkPindala);
-    }
 }
