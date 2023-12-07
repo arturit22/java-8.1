@@ -1,0 +1,27 @@
+public class main {
+    public static void main(String[] args) {
+        //siin on andmed pindala jaoks
+        String alusString = "5.0"; 
+        String korgusString = "3.0"; 
+
+        //siin kasutan pindala arvutamise jaoks alamprogramme
+        double roopkylikuPindala = Pindalad.roopkylikS(alusString, korgusString);
+        System.out.println("roopkuliku pindala: " + roopkylikuPindala);
+
+        double ristkylikuPindala = Pindalad.ristkylikS(alusString, korgusString);
+        System.out.println("ristkuliku pindala: " + ristkylikuPindala);
+
+        double kolmnurgaPindala = Pindalad.kolmnurkS(alusString, korgusString);
+        System.out.println("kolmnurga pindala: " + kolmnurgaPindala);
+
+        //siin kasutan ruumala arvutamise jaoks alamprogramme
+        double risttahukaRuumala = Ruumala.risttahukasV(5.0, 3.0, 2.0); 
+        System.out.println("risttahuka ruumala: " + risttahukaRuumala);
+
+        double ristkulikprismaRuumala = Ruumala.ristkulikprismaV(5.0, 3.0, 2.0);
+        System.out.println("ristkulikprisma ruumala: " + ristkulikprismaRuumala);
+        
+        double koonuseRuumala = Ruumala.koonusV(2.0, 4.0); 
+        System.out.println("koonuse ruumala: " + koonuseRuumala);
+    }
+}
