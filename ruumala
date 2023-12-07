@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Ruumala {
     //alamprogramm mis arvutab risttahuka ruumala
     public static double risttahukasV(double pikkus, double laius, double korgus) {
@@ -12,46 +10,5 @@ public class Ruumala {
     //alamprogramm mis arvutab koonuse ruumala
     public static double koonusV(double raadius, double korgus) {
         return (Math.PI * raadius * raadius * korgus) / 3;
-    }
-
-    public static void main(String[] args) {
-        //skanner mis kusib kasutajalt infot
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("vali ruumala mida soovid arvutada:");
-        System.out.println("1. risttahukas");
-        System.out.println("2. ristkulikprisma");
-        System.out.println("3. koonus");
-        //votab kasutaja sisestatud numbri
-        int valik = scanner.nextInt();
-        //kui valik on 1 voi 2 siis kusib pikkuse ja laiuse
-        if (valik == 1 || valik == 2) {
-            System.out.print("sisesta pikkus: ");
-            double pikkus = scanner.nextDouble();
-
-            System.out.print("sisesta laius: ");
-            double laius = scanner.nextDouble();
-            //kui valik on 1 siis kusib ka korguse
-            if (valik == 1) {
-                System.out.print("sisesta korgus: ");
-                double korgus = scanner.nextDouble();
-                double risttahukasRuumala = risttahukasV(pikkus, laius, korgus);
-                System.out.println("risttahuka ruumala: " + risttahukasRuumala);
-            //kui valik on 2 siis ei kusi korguse
-            } else {
-                double ristkülikprismaRuumala = ristkulikprismaV(pikkus, laius, 1);
-                System.out.println("ristkulikprisma ruumala: " + ristkülikprismaRuumala);
-            }
-        //kui valik on 3 siis kusib raadiuse ja korguse
-        } else if (valik == 3) {
-            System.out.print("sisesta raadius: ");
-            double raadius = scanner.nextDouble();
-
-            System.out.print("sisesta korgus: ");
-            double korgus = scanner.nextDouble();
-
-            double koonuseRuumala = koonusV(raadius, korgus);
-            System.out.println("koonuse ruumala: " + koonuseRuumala);
-        } 
     }
 }
